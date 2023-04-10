@@ -1,5 +1,7 @@
 package com.adviters.bootcamp;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
@@ -16,15 +18,36 @@ public class Main {
         // ejercicio7();
         // ejercicio8();
         // ejercicio9();
+
+/*        int tateti_zise = 3;
+        String[][] tateti = new String[tateti_zise][tateti_zise];
+        for (int fila = 0; fila < 3; fila++) {
+            for (int columna = 0; columna < tateti_zise; columna++) {
+                System.out.print("[" + fila + "][" + columna + "] ");
+            }
+            System.out.println("");
+        }*/
+
+/*        Empleado devOriginal = new Empleado();
+
+        Empleado devCopia1 = devOriginal.setDni(37686822);
+
+        Empleado devCopia2 = devCopia1.setNombre("Gabriel");
+
+        System.out.println(devOriginal.toString());
+
+        System.out.println(devCopia1.toString());
+
+        System.out.println(devCopia2.toString());*/
     }
 
     /*    1. Escribí un programa que le solicite al usuario un número entero y muestre todos los números correlativos
     entre el 1 y el número ingresado por el usuario.*/
     public static void ejercicio1() {
         System.out.print("Ingrese un número entero mayor a 1: ");
-        int numeroIngresado = input.nextInt();
+        Integer numeroIngresado = input.nextInt();
         System.out.print("Los números correlaivos entre 1 y " + numeroIngresado + " son: ");
-        for (int numero = 1; numero <= numeroIngresado; numero++) {
+        for (Integer numero = 1; numero <= numeroIngresado; numero++) {
             System.out.print(numero);
             System.out.print((numero < numeroIngresado) ? " - " : ""); // Separación entre números
         }
